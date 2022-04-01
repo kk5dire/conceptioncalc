@@ -10,14 +10,16 @@ function function1() {
   if (x == "I dont know my birthday") {alert("thats so sad")}
   if (x == "George is breaking up with his gf") {alert("thats so sad")}
   if (x == "") {alert("Hey Dumbass you forgot to enter something")}
+  //if (x == "" {x = NaN})
   var day = new Date(x)
   var today = new Date()
   document.write("<center><p style='font-size: 10; font-family: comic sans ms;'>This project is open source and avalible on</p><a style='font-size: 10; font-family: comic sans ms;' href='https://github.com/kk5dire/conceptioncalc/tree/main'>github</a></center><center><h1 style='font-family: comic sans ms;'>Conception Calculator</h1><h3 style='font-family: comic sans ms;'>Get scarred for life with the click of a button</h3> <center> Your parents did it on:</center>")
   x - 152
   const d = new Date(0, 5, 0, 0, 0);
   data = day - d// day - today
+ // var base new Date(x) - new Date(0, 5, 0, 0, 0)
   //document.write(data)
-  var year = new Date(x).getFullYear();
+  var year = new Date(x).getFullYear();//new Date(datfin).getFullYear();
  // document.write("year", year)
   var datfin = new Date(data)
   var monthNames = ["January", "February", "March", "April", "May","June","July", "August", "September", "October", "November","December"];
