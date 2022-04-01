@@ -1,3 +1,4 @@
+<center><p style="font-size: 10">This project is open source and avalible on</p><a style="font-size: 10;" href="https://github.com/kk5dire/conceptioncalc/tree/main">github</a></center>
 <center><h1>Conception Calculator</h1>
 <h3>Get scarred for life with the click of a button</h3>
 <button style="height:60px; width:120px;" onclick="function1()">Calculate</button></center>
@@ -5,13 +6,13 @@
 <script>
     
 function function1() {
-  x = prompt("Input full birthdate:"); 
+  x = prompt("Input full birthdate ex(January 1 2022) :"); 
   if (x == "I dont know my birthday") {alert("thats so sad")}
   if (x == "George is breaking up with his gf") {alert("thats so sad")}
   if (x == "") {alert("Hey Dumbass you forgot to enter something")}
   var day = new Date(x)
   var today = new Date()
-  document.write("<center> Your parents did it on:</center>")
+  document.write("<center><p style='font-size: 10'>This project is open source and avalible on</p><a style='font-size: 10;' href='https://github.com/kk5dire/conceptioncalc/tree/main'>github</a></center><center><h1>Conception Calculator</h1><h3>Get scarred for life with the click of a button</h3> <center> Your parents did it on:</center>")
   x - 152
   const d = new Date(0, 5, 0, 0, 0);
   data = day - d// day - today
@@ -24,6 +25,15 @@ function function1() {
   //document.write("month", month)
   var dayta = new Date(data).getDate();
   //document.write("date", dayta)
+  //if(monthNames[new Date(data).getMonth()] == Undefined || dayta == Nan || year == NaN) {alert("Missing Data")}
+  //if(dayta == NaN) {alert("Invalid Date")}
+  //if(year == NaN) {year = "Entered"}
+ /*  var writer = ("<center>", monthNames[new Date(data).getMonth()], " ", dayta, " ", year,"</center>")
+  let result = writer.includes("NaN")
+  let result2 = writer.includes("undefined")
+  if(result == true) {alert("Invalid Date")}
+  if(result2 == true) {alert("Invalid Date")}
+  */
   document.write("<center>", monthNames[new Date(data).getMonth()], " ", dayta, " ", year,"</center>")
   document.write('<br><center><button  style="height:60px;width:120px" onclick="window.location.reload()">Try Again</button></center>')
  
