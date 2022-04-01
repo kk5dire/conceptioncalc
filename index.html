@@ -1,7 +1,8 @@
-<center><p style="font-family: comic sans ms; font-size: 10">This project is open source and avalible on</p><a style="font-size: 10;" href="https://github.com/kk5dire/conceptioncalc/tree/main">github</a></center>
-<center><h1 style="font-family: comic sans ms;">Conception Calculator</h1>
-<h3 style="font-family: comic sans ms;">Get scarred for life with the click of a button</h3>
-<button style="height:60px; width:120px;" onclick="function1()">Calculate</button></center>
+<body style="background-color: black;">
+<center><p style="color: white; font-family: comic sans ms; font-size: 10">This project is open source and avalible on</p><a style="font-size: 10;" href="https://github.com/kk5dire/conceptioncalc/tree/main">github</a></center>
+<center><h1 style="color: white; font-family: comic sans ms;">Conception Calculator</h1>
+<h3 style="color: white; font-family: comic sans ms;">Get scarred for life with the click of a button</h3>
+<button style="background-color: grey; color: white; height:60px; width:120px;" onclick="function1()">Calculate</button></center>
 <title>Conception Calculator</title>
 <script>
     
@@ -13,7 +14,8 @@ function function1() {
   //if (x == "" {x = NaN})
   var day = new Date(x)
   var today = new Date()
-  document.write("<center><p style='font-size: 10; font-family: comic sans ms;'>This project is open source and avalible on</p><a style='font-size: 10; font-family: comic sans ms;' href='https://github.com/kk5dire/conceptioncalc/tree/main'>github</a></center><center><h1 style='font-family: comic sans ms;'>Conception Calculator</h1><h3 style='font-family: comic sans ms;'>Get scarred for life with the click of a button</h3> <center> Your parents did it on:</center>")
+  document.write("<body style='background-color: black;'>")
+  document.write("<center><p style='color: white; font-size: 10; font-family: comic sans ms;'>This project is open source and avalible on</p><a style='color: white; font-size: 10; font-family: comic sans ms;' href='https://github.com/kk5dire/conceptioncalc/tree/main'>github</a></center><center><h1 style='color: white; font-family: comic sans ms;'>Conception Calculator</h1><h3 style='color: white; font-family: comic sans ms;'>Get scarred for life with the click of a button</h3> <center><p style='color: white; font-family: comic sans ms; '> Your parents did it on:</p></center>")
   x - 152
   const d = new Date(0, 5, 0, 0, 0);
   data = day - d// day - today
@@ -36,8 +38,9 @@ function function1() {
   if(result == true) {alert("Invalid Date")}
   if(result2 == true) {alert("Invalid Date")}
   */
-  document.write("<center>", monthNames[new Date(data).getMonth()], " ", dayta, " ", year,"</center>")
-  document.write('<br><center><button  style="height:60px;width:120px" onclick="window.location.reload()">Try Again</button></center><br><p>Please note: Year is not always accurate when birthday is close to beginning of year</p>')
- 
+  document.write("<center><strong><p style='color: white; font-family: comic sans ms;'>", monthNames[new Date(data).getMonth()], " ", dayta, " ", year,"</p></strong></center>")
+  document.write('<br><center><button  style="background-color: grey; color: white; height:60px;width:120px" onclick="window.location.reload()">Try Again</button></center><br><p style="color: white;">Please note: Year is not always accurate when birthday is close to beginning of year</p>')
+ document.write("</body>")
 }
 </script>
+</body>
